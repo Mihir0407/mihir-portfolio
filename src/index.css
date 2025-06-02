@@ -285,28 +285,34 @@ button {
 .lightbox-next:hover {
   color: #60a5fa;
 }
-.lightbox-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.lightbox-title {
-  color: white;
-  font-size: 1.1rem;
+.contact-card {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 12px;
-  max-width: 90vw;
+  transition: transform 0.3s ease;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--link-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: var(--link-hover);
 }

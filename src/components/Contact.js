@@ -4,29 +4,31 @@ export default function Contact() {
   return (
     <section id="contact" data-aos="fade-up">
       <h2>Contact</h2>
-      <p>📧 satamihir4@gmail.com</p>
-      <p>📞 +91 8401447054</p>
-      <p>📍 Gandhinagar, Gujarat</p>
+      <div className="contact-card">
+        <p>📧 <strong>Email:</strong> satamihir4@gmail.com</p>
+        <p>📞 <strong>Phone:</strong> +91 8401447054</p>
+        <p>📍 <strong>Location:</strong> Gandhinagar, Gujarat</p>
 
-      <a
-        href="/Mihir_Resume.pdf"
-        download
-        style={{
-          display: 'inline-block',
-          marginTop: '20px',
-          padding: '12px 24px',
-          backgroundColor: '#2563eb',
-          color: '#fff',
-          textDecoration: 'none',
-          borderRadius: '8px',
-          fontWeight: 'bold',
-          transition: 'background-color 0.3s ease'
-        }}
-        onMouseOver={(e) => e.target.style.backgroundColor = '#1d4ed8'}
-        onMouseOut={(e) => e.target.style.backgroundColor = '#2563eb'}
-      >
-        📄 Download Resume
-      </a>
+        {/* Resume Preview */}
+        {/* <div className="resume-preview">
+          <iframe
+            title="Resume Preview"
+            src="https://drive.google.com/file/d/1LiiaR0pRoVVLcFOKwcA9_56joXHnaQuV/view?usp=drive_link"
+            width="100%"
+            height="480"
+            allow="autoplay"
+          ></iframe>
+        </div> */}
+
+        <a
+          href="https://drive.google.com/file/d/1LiiaR0pRoVVLcFOKwcA9_56joXHnaQuV/view?usp=drive_link"
+          className="resume-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📄 Download Resume
+        </a>
+      </div>
     </section>
   );
 }
